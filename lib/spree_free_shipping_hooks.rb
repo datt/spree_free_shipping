@@ -1,3 +1,4 @@
+require 'spree/theme_support/hook'
 class SpreeFreeShippingHooks < Spree::ThemeSupport::HookListener
 
   insert_after :admin_configurations_menu do
@@ -6,6 +7,6 @@ class SpreeFreeShippingHooks < Spree::ThemeSupport::HookListener
       <td><%= t("free_shipping_settings_description") %></td>
     </tr>'
   end
-  
+
 end
 
